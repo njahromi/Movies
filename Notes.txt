@@ -1,0 +1,19 @@
+Both new endpoints are now implemented:
+
+Movies by Year:
+GET /movies/year/:year?page=1&desc=true
+
+Movies by Genre:
+GET /movies/genre/:genre?page=1
+
+Both return paginated results with the required fields.
+
+You can test them with URLs like:
+
+http://localhost:3000/movies/year/1995
+http://localhost:3000/movies/year/1995?desc=true&page=2
+http://localhost:3000/movies/genre/Drama
+http://localhost:3000/movies/genre/Comedy?page=2
+
+
+Let me know if you want to add more features, improve the API, or need help with anything else!

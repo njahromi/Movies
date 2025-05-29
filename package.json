@@ -1,0 +1,20 @@
+{
+  "name": "aetna-code-test",
+  "version": "1.0.0",
+  "description": "* An IDE or text editor of your choice * [Sqlite3](http://www.sqlitetutorial.net/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
