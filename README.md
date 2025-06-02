@@ -130,8 +130,3 @@ AC:
 * An endpoint exists that will list all movies by a genre
 * List is paginated: 50 movies per page, the page can be altered with the `page` query params
 * Columns include: imdb id, title, genres, release date, budget
-
-## Tips
-
-* This is a test of your abilities and not how fast you can crank through random stories.  As such, it is more important to produce well structured code that meets the criteria in the user stories rather than getting all stories done.
-* If you get stuck, please ask someone.  We want to know how you work both as an individual and as part of a team.  You will not lose points for asking for help on something that is unclear or where you are stuck.
