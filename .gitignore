@@ -1,0 +1,90 @@
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.db
+*.db-shm
+*.db-wal
+/app/data/
+
+# Node
+node_modules/
+build/
+dist/
+.env
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Docker
+*.tar
+*.pid
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Relay
+__generated__/
+
+# Logs
+*.log
+
+# Others
+frontend/.env
+<<<<<<< Updated upstream
+=======
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.db
+*.db-shm
+*.db-wal
+/app/data/
+
+# Node
+node_modules/
+build/
+dist/
+.env
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Docker
+*.tar
+*.pid
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Relay
+__generated__/
+
+# Logs
+*.log
+
+# Others
+frontend/.env
+>>>>>>> e8347207aaf6edae458910065ff594d6a01a54a2
+=======
+>>>>>>> Stashed changes
+backend/.env 
