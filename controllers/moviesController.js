@@ -7,6 +7,7 @@ exports.listMovies = (req, res) => {
   const page = parseInt(req.query.page) || 1;
   const pageSize = 50;
   const offset = (page - 1) * pageSize;
+  const search = req.query.search;
 
   const db = new sqlite3.Database(dbPath, sqlite3.OPEN_READONLY, (err) => {
     if (err) {
@@ -14,8 +15,16 @@ exports.listMovies = (req, res) => {
     }
   });
 
-  const query = `SELECT imdbId, title, genres, releaseDate, budget FROM movies LIMIT ? OFFSET ?`;
-  db.all(query, [pageSize, offset], (err, rows) => {
+  let query, params;
+  if (search) {
+    query = `SELECT imdbId, title, genres, releaseDate, budget FROM movies WHERE LOWER(title) LIKE ? LIMIT ? OFFSET ?`;
+    params = [`%${search.toLowerCase()}%`, pageSize, offset];
+  } else {
+    query = `SELECT imdbId, title, genres, releaseDate, budget FROM movies LIMIT ? OFFSET ?`;
+    params = [pageSize, offset];
+  }
+
+  db.all(query, params, (err, rows) => {
     db.close();
     if (err) {
       return res.status(500).json({ error: 'Query error' });
